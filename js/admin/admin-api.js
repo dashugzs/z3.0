@@ -1,5 +1,5 @@
 // Worker 基础地址（替换为你的实际Worker地址）
-const WORKER_BASE_URL = 'https://nav-data-manager.guoxichang.workers.dev/';
+const WORKER_BASE_URL = 'https://ce.xiaoniuss.top';
 
 // 存储和获取管理员密钥
 export function getAdminKey() {
@@ -60,3 +60,4 @@ export async function saveNavigationData(data) {
 }
 
     
+

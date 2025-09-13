@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head> 
+    <meta charset="UTF-8" /> 
+    <!--<meta http-equiv="refresh" content="0;url=https://xiaoniuss.fun">--> 
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" /> 
+    <meta http-equiv="Cache-Control" content="no-siteapp" /> 
+    <meta name="apple-mobile-web-app-capable" content="yes" /> 
+    <meta name="apple-touch-fullscreen" content="yes" /> 
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
+    <meta name="full-screen" content="yes" />
+    <!--UC强制全屏--> 
+    <meta name="browsermode" content="application" />
+    <!--UC应用模式--> 
+    <meta name="x5-fullscreen" content="true" />
+    <!--QQ强制全屏--> 
+    <meta name="x5-page-mode" content="app" />
+    <!--QQ应用模式--> 
+    <title>小牛搜索- XiaoNiuss.Top</title> 
+    <meta name="keywords" content="信仰圣光.一款业余的导航网站">
+    <meta name="description" content="可能是最简洁的搜索导航，给你简单舒爽的搜索体验。">
+    <link rel="shortcut icon" href="https://img.alicdn.com/imgextra/i3/2327995847/O1CN01fhXl2q1t3yYaZYRnO_!!2327995847.png" type="image/png" /> 
+    <link rel="stylesheet" href="css/a1.css" /> 
+
+    <script src="js/a2jquery1.min.js"></script> 
+</head> 
+<body>
+    <div id="menu">
+        <i class="iconfont icon-menu"></i>
+    </div> 
+    <div class="list closed"> 
+        <ul>
+            <!-- 导航内容将通过JS动态生成 -->
+        </ul> 
+    </div> 
+    <!-- <iframe src="https://sucai.xiaoniuss.top/2/" width="100%" height="100%"></iframe>-->
+    <div id="search" class="s-search">
+        <div id="search-list" class="hide-type-list">
+            <div class="s-type">
+                <span></span>
+                <div class="s-type-list animated fadeInUp">
+                    <label for="type-baidu">常用</label>
+                    <label for="type-search">搜索</label>
+                    <label for="type-wangpan1">音视</label>
+                    <label for="type-zhihu">社区</label>
+                    <label for="type-jiexi">解析</label>
+                </div>
+            </div>
+            <div class="search-group group-a">
+                <span class="type-text">常用》</span>
+                <ul class="search-type">
+                    <li><input checked="" hidden="" type="radio" name="type" id="type-baidu" value="https://www.baidu.com/s?wd=" data-placeholder="百度一下 点击左上角常用》按钮可切换搜索源" /><label for="type-baidu"><span>百度</span></label></li>
+                    <li><input hidden="" type="radio" name="type" id="type-google" value="/mima/" data-placeholder="输入密令" /><label for="type-google"><span>蜜码</span></label></li>
+                    <li><input hidden="" type="radio" name="type" id="type-taobao" value="https://s.taobao.com/search?q=" data-placeholder="输入商品的名字关键词" /><label for="type-taobao"><span>淘宝</span></label></li>
+                    <li><input hidden="" type="radio" name="type" id="type-bing1" value="https://search.jd.com/Search?keyword=" data-placeholder="输入商品的名字关键词" /><label for="type-bing1"><span>京东</span></label></li>
+                    <li><input hidden="" type="radio" name="type" id="type-jiexi8" value="https://www.nmme.xyz/s/1/" data-placeholder="输入视频网址或电影名字" /><label for="type-jiexi8"><span>橘子盘搜</span></label></li>
+                    <li><input hidden="" type="radio" name="type" id="type-wangpan" value="https://www.alipansou.com/search?k=" data-placeholder="输入电视电影资源名字" /><label for="type-wangpan"><span>猫狸盘搜</span></label></li>
+                    <li><input hidden="" type="radio" name="type" id="type-wangpan7" value="https://music.163.com/#/search/m/?s=" data-placeholder="输入音乐的名字" /><label for="type-wangpan7"><span>网易云</span></label></li>
+                </ul>
+            </div>
+            <div class="search-group group-b">
+                <span class="type-text">搜索》</span>
+                <ul class="search-type">
+                    <li><input hidden="" type="radio" name="type" id="type-search" value="https://www.baidu.com/s?wd=" data-placeholder="百度一下" /><label for="type-search"><span>百度</span></label></li>
+                    <li><input hidden="" type="radio" name="type" id="type-google2" value="/mima/" data-placeholder="输入密令" /><label for="type-google2"><span>蜜码</span></label></li>
+                    <li><input hidden="" type="radio" name="type" id="type-360" value="https://www.so.com/s?q=" data-placeholder="360好搜" /><label for="type-360"><span>360</span></label></li>
+                    <li><input hidden="" type="radio" name="type" id="type-sogo" value="https://www.sogou.com/web?query=" data-placeholder="搜狗搜索" /><label for="type-sogo"><span>搜狗</span></label></li>
+                    <li><input hidden="" type="radio" name="type" id="type-bing" value="https://cn.bing.com/search?q=" data-placeholder="微软Bing搜索" /><label for="type-bing"><span>Bing</span></label></li>
+                    <li><input hidden="" type="radio" name="type" id="type-sm" value="https://yz.m.sm.cn/s?q=" data-placeholder="UC移动端搜索" /><label for="type-sm"><span>神马</span></label></li>
+                </ul>
+            </div>
+            <div class="search-group group-c">
+                <span class="type-text">音视》</span>
+                <ul class="search-type">
+                    <li><input hidden="" type="radio" name="type" id="type-wangpan1" value="https://music.163.com/#/search/m/?s=" data-placeholder="输入音乐的名字" /><label for="type-wangpan1"><span>网易云</span></label></li>
+                    <li><input hidden="" type="radio" name="type" id="type-wangpan8" value="https://y.qq.com/n/ryqq/search?searchid=1&remoteplace=txt.yqq.top&w=" data-placeholder="输入音乐的名字" /><label for="type-wangpan8"><span>qq音乐</span></label></li>
+                    <li><input hidden="" type="radio" name="type" id="type-wangpan2" value="https://search.bilibili.com/all?keyword=" data-placeholder="输入电视电影资源名字" /><label for="type-wangpan2"><span>bilibili</span></label></li>
+                    <li><input hidden="" type="radio" name="type" id="type-wangpan3" value="https://v.qq.com/x/search/?q=" data-placeholder="输入电视电影资源名字" /><label for="type-wangpan3"><span>腾讯</span></label></li>
+                    <li><input hidden="" type="radio" name="type" id="type-wangpan4" value="https://so.iqiyi.com/so/q_" data-placeholder="输入电视电影资源名字" /><label for="type-wangpan4"><span>爱奇艺</span></label></li>
+                    <li><input hidden="" type="radio" name="type" id="type-wangpan5" value="https://so.youku.com/search_video/q_" data-placeholder="输入电视电影资源名字" /><label for="type-wangpan5"><span>优酷</span></label></li>
+                    <li><input hidden="" type="radio" name="type" id="type-wangpan6" value="https://so.mgtv.com/so?k=" data-placeholder="输入电视电影资源名字" /><label for="type-wangpan6"><span>芒果</span></label></li>
+                </ul>
+            </div>
+            <div class="search-group group-d">
+                <span class="type-text">社区》</span>
+                <ul class="search-type">
+                    <li><input hidden="" type="radio" name="type" id="type-zhihu" value="https://www.zhihu.com/search?type=content&amp;q=" data-placeholder="知乎" /><label for="type-zhihu"><span>知乎</span></label></li>
+                    <li><input hidden="" type="radio" name="type" id="type-wechat" value="http://weixin.sogou.com/weixin?type=2&amp;query=" data-placeholder="微信" /><label for="type-wechat"><span>微信</span></label></li>
+                    <li><input hidden="" type="radio" name="type" id="type-weibo" value="http://s.weibo.com/weibo/" data-placeholder="微博" /><label for="type-weibo"><span>微博</span></label></li>
+                    <li><input hidden="" type="radio" name="type" id="type-douban" value="https://www.douban.com/search?q=" data-placeholder="豆瓣" /><label for="type-douban"><span>豆瓣</span></label></li>
+                    <li><input hidden="" type="radio" name="type" id="type-why" value="https://ask.seowhy.com/search/?q=" data-placeholder="SEO问答社区" /><label for="type-why"><span>搜外问答</span></label></li>
+                </ul>
+            </div>
+            <div class="search-group group-e">
+                <span class="type-text">解析》</span>
+                <ul class="search-type">
+                    <li><input hidden="" type="radio" name="type" id="type-jiexi" value="https://z1.m1907.cn/?jx=" data-placeholder="M1907解析接口粘贴需要解析的网址【支持网址剧名电影名】" /><label for="type-jiexi"><span>M1907</span></label></li>
+                    <li><input hidden="" type="radio" name="type" id="type-jiexi1" value="https://vip.bljiex.com/?v=" data-placeholder="BL智能解析接口粘贴需要解析的网址【支持网址剧名电影名】" /><label for="type-jiexi1"><span>BL智能</span></label></li>
+                    <li><input hidden="" type="radio" name="type" id="type-jiexi2" value="https://17kyun.com/api.php?url=" data-placeholder="17kyun解析接口粘贴需要解析的网址【仅支持网址】" /><label for="type-jiexi2"><span>17kyun</span></label></li>
+                    <li><input hidden="" type="radio" name="type" id="type-jiexi3" value="https://jx.618g.com/?url=" data-placeholder="618G解析接口粘贴需要解析的网址【仅支持网址】" /><label for="type-jiexi3"><span>618G</span></label></li>
+                    <li><input hidden="" type="radio" name="type" id="type-jiexi4" value="https://okjx.cc/?url=" data-placeholder="OK解析接口粘贴需要解析的网址【仅支持网址】" /><label for="type-jiexi4"><span>OK解析</span></label></li>
+                    <li><input hidden="" type="radio" name="type" id="type-jiexi5" value="https://jx.m3u8.tv/jiexi/?url=" data-placeholder="M3U8解析接口粘贴需要解析的网址【仅支持网址】" /><label for="type-jiexi5"><span>M3U8解析接口</span></label></li>
+                </ul>
+            </div>
+        </div>
+        <form action="https://www.baidu.com/s?wd=" method="get" target="_blank" id="super-search-fm">
+            <input type="text" id="search-text" placeholder="输入关键字搜索" style="outline:0" />
+            <button type="submit"><i class="iconfont icon-xdss"></i></button>
+            <ul id="ul" class="ko"></ul>
+        </form>
+        <div class="set-check hidden-xs">
+            <div id="centerContainer" class="center-container">  
+                <div id="floatingAlert" class="floating-alert">  
+                    <p>公告:改版后右上角菜单可调出网址导航，点击中间常用选项可调用其他搜索源<a href="1" target="_blank">【点击进入上个版本】</a><br>因网络/服务器/改版/等原因可能导致页面打不开<a href="https://support.qq.com/products/336749" target="_blank">【点击进入发布页收藏免迷路】</a><br>新版本将在近期上线新增支持夜间模式切换<a href="https://xiaoniuss.fun" target="_blank">【点击进入可提前解锁新版】</a></p>
+                </div>  
+            </div>  
+            <input type="checkbox" id="set-search-blank" class="bubble-3" autocomplete="off" />
+        </div>
+    </div> 
+    <div style="position: relative; height:700px;">  
+        <div style="position: absolute; bottom: 0; width: 100%; text-align: center; transform: translateY(10%);">小牛搜索-XiaoNiuSs.Top</div>  
+    </div>
+    <script src="js/navigation-data.js"></script>
+    <script src="js/navigation-utils.js"></script>
+    <script type="text/javascript" src="js/a3sousuo.js"></script> 
+
+    <div class="bgo"></div> 
+    <!-- <img class="logo" src="https://img.alicdn.com/imgextra/i2/2327995847/O1CN01zF1SMH1t3yX58a5YX_!!2327995847.gif" />  -->
+    <!-- <img class="logo" src="https://img.alicdn.com/imgextra/i2/2327995847/O1CN01uRI4dY1t3yWHIi0aD_!!2327995847.gif" />  -->
+</body>
+</html>
+    

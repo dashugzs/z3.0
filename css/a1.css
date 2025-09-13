@@ -1,0 +1,542 @@
+
+#search {
+	width: 717px;
+	margin: 0px auto 0px;/*搜索框上下空位占位*/
+	position: absolute;
+	z-index: 99;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -0%);
+}
+
+#search form {
+	position: relative
+}
+
+#search-text {
+/*padding:9pt;*/
+	color: black;
+	width: 100%;
+	height: 50px;
+	font-size:1pc;
+	border: 01;
+	border-radius: 15px;
+	background-color: rgba(0,0,0,0.04);/*搜索框内*/
+	text-indent: 80px;
+}
+
+#search button {
+	position: absolute;
+	top: 0px;
+	left: 0;
+	background: none;
+	border: 0;
+	width: 30px;
+	height: 36px;
+	margin: 7px 9pt 0;
+	line-height: 36px;
+	border-radius: 3px
+}
+
+#search label:hover {
+	background: rgba(203,203,203,0.26);/*搜索框选中*/
+	cursor: pointer
+}
+
+#search button i {
+	color: #000;
+	font-size: 18px
+}
+
+.search-group {
+	display: none;
+	padding-left: 75px
+}
+
+.s-current .search-type {
+	padding-left: 0;
+	display: block
+}
+
+.s-current {
+	display: block
+}
+
+#search-list {
+	position: relative
+}
+
+.s-type {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 13;
+	width: 75px
+}
+
+.s-type:hover {
+	height: auto
+}
+
+.s-type>span {
+	display: block;
+	height: 31px;
+	width: 75px
+}
+
+.s-type-list {
+	display: none;
+	position: absolute;
+	top: 31px;
+	width: 70px;
+	background: rgba(255,255,255,1);/*菜单选中边框*/
+	border-radius: 6px;
+	box-shadow: 0 0 6px rgba(0,0,0,0.18);/*菜单边框*/
+	padding: 9pt 0;
+}
+
+
+
+.s-type-list label {
+	display: block;
+	font-size: 15px;
+	text-align: center;
+	padding: 2px 0;
+}
+
+.s-type-list .tile-lg {
+	color: #000;
+	width: 3pc;
+	height: 3pc;
+	font-size: 1.25rem;
+	line-height: 3rem;
+	border-radius: .3rem;
+	display: block;
+	margin: auto
+}
+
+.s-type-list label:hover {
+	color: #000
+}
+
+.s-type:hover .s-type-list {
+	display: block;
+	padding-top: 8px
+}
+
+.type-text {
+	position: absolute;
+	left: 0;
+	width: 75px;
+	padding-left: 9pt;
+	font-size: 1pc;
+	line-height: 31px
+}
+
+
+
+.search-type {
+	white-space: nowrap;
+	margin: 0
+}
+
+.search-type label {
+	margin: 0
+}
+
+.search-type li {
+	display: inline-block
+}
+
+.search-type li label {
+	display: inline-block;
+	padding: 0 11px;
+	font-size: 14px;
+	line-height: 31px;
+	border-radius: 3px 3px 0 0;
+	cursor: pointer
+}
+
+.search-type input:checked+label,.search-type input:hover+label {
+	background-color: rgba(0,0,0,0.06);/*菜单选准*/
+}
+
+.set-check {
+	margin-top: 3px;
+	font-size: 9pt
+}
+
+.set-check label {
+	margin-left: 3px
+}
+
+.set-check input,.set-check label {
+	opacity: 0;
+	transition: all .3s ease
+}
+
+.search-type li {
+	list-style: none;
+	display: inline-block
+}
+
+
+
+/*margin:0 auto;*/
+		width: 90%;
+	}
+
+	.search-type {
+		overflow: scroll
+	}
+
+	.search-list {
+		height: 30px;
+		overflow-y: hidden;
+		overflow-x: scroll;
+		white-space: nowrap
+	}
+}
+
+.fa-2x {
+	padding-top: 15px;
+	font-size: 1.5em;
+}
+.wei{
+    list-style: none;
+    position: relative;
+    text-indent: 10px;
+}
+.wei:hover{
+     background: rgba(231,231,231,0.44);/*搜索联想选中*/
+}
+.a{
+     display: inline-block;
+     width: 90%;
+     color: #000000 ;/*搜索联想字体*/
+     height: 27px;
+     line-height: 30px;
+     overflow:hidden;
+     text-overflow: ellipsis;
+}
+.ko{
+	display: none;
+    top: 10px;
+    position: relative;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.bgo{
+	background: url();
+    background-size: cover;
+    filter: brightness(0.9);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.bgo{
+	background: url(); 
+    background-size: cover;
+    filter: brightness(0.9);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+html {
+    font-family: 'Noto Sans SC Sliced', PingFangSC-Light, Microsoft YaHei UI, Microsoft YaHei, helvetica, sans-serif;
+    font-weight: 300;
+    color: #000000;/*菜单字体颜色*/
+}
+
+/*form,
+input,
+button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    background: none;
+}
+input::-webkit-input-placeholder {
+    color: #EF49FF;
+    letter-spacing: 2px;
+    font-size: 16px;
+}*/
+
+ul,
+li {
+    display: block;
+    list-style: none;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #00B8FF;
+}
+
+#menu {
+    width: 50px;
+    height: 50px;
+    transform: scale(0.8);
+    position: absolute;
+    right: 10px;
+    top: 5px;/*右上角菜单图标上下位置*/
+    z-index: 2000000;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#menu i {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 24px auto;
+    width: 25px;
+    height: 3px;
+    background: #000000;/*右上角菜单图标*/
+    border-radius:25px;
+}
+
+#menu i:before {
+    content: '';
+    width: 15px;
+    height: 3px;
+    top: -8px;
+    background: #000000FF;/*右上角菜单图标*/
+    position: absolute;
+    right: 0;
+    border-radius:25px;
+}
+
+#menu i:after {
+    content: '';
+    width: 13px;
+    height: 3px;
+    bottom: -8px;
+    background: #000000FF;/*右上角菜单图标*/
+    position: absolute;
+    left: 0;
+    border-radius:25px;
+}
+
+#menu.on {
+    right: 380px;/*箭头位置*/
+    background: rgba(255,255,255,1);
+    border-radius: 25px;
+   /* box-shadow: 0 6px 8px rgba(255,255,255,1);*/
+}
+
+#menu.on i {
+    width: 20px;
+    background: #000000;/*箭头颜色*/
+}
+
+#menu.on i:before {
+    top: -5px;
+    transform: rotate(45deg);
+    width: 14px;
+    right: -1px;
+    left: auto;
+    background: #000000;/*箭头颜色*/
+}
+
+#menu.on i:after {
+    bottom: -5px;
+    transform: rotate(-45deg);
+    width: 14px;
+    right: -1px;
+    left: auto;
+    background: #000000;/*箭头颜色*/
+}
+
+.list {
+    width: 337px;
+    padding: -1 40px;/*书签左右位置*/
+    height: 100%;/*书签上下位置*/
+    overflow: hidden;
+    overflow-y: auto;
+    position: absolute;
+    right: -15px;
+    z-index: 2000;
+    background: rgba(1,1,1,0.03);/*书签背景阴影*/
+    transition: 0.3s all linear;
+}
+.list.closed {
+    right: -380px;
+}
+
+.list ul {
+    width: 330px;
+    float: left;
+    padding: 0 0 20px;
+    margin-bottom: 10px;
+}
+
+.list ul li {
+    float: left;
+    margin: 3px;/*书签间距*/
+    width: 100px;
+    height: 20px;
+    text-align: left; /* 改为居中 */
+    line-height: 20px;
+}
+
+.list ul li a {
+    width: 100%;
+    border-radius: 5px;
+    transition: 0.2s all linear;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-weight: 500;
+    background: rgba(0, 0, 0, 0);
+    text-align: left;
+    font-size: 12px;
+    text-indent: 1em; /* 添加这一行，实现2个字符缩进效果 */
+}
+
+.list ul li a i {
+    margin-right: 5px;
+    margin-left: 15px;
+    transition: 0.2s all linear;
+}
+
+.list ul li a i.iconfont {
+    font-size: 14px;
+}
+
+.list ul li:hover a {
+    color: #000;/*书签选中火苗*/
+    background-color: #E2E2E2;
+    background-image: linear-gradient(135deg, rgba(35, 153, 255) 0%, rgba(84, 175, 253) 100%);
+    box-shadow: 0 3px 3px rgba(0, 40, 70, .3);
+}
+
+.list ul li:hover a i {
+    color: #000 !important;/*书签选中火苗*/
+}
+
+.list ul li.title {
+    width: 100%;
+    height: 20px;
+    line-height: 0px;
+    margin: 30px 0 0;
+    text-align: left;
+    text-indent: 10px;
+    /*border-bottom: 1px dashed #F1F1F1;*/
+    color: #3F9DFF;/*书签表头字体*/
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.list ul li.title i {
+    color: #3F9DFF;/*书签表头火苗*/
+    margin-right: 5px;
+    font-weight: normal;
+}
+.logo{
+    position: absolute;
+    z-index: 99;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    opacity: 1;
+}
+@media (max-width: 640px) {
+    .list {
+        width: 227px;
+    }
+    .list ul {
+        width: 220px;
+    }
+    #menu {
+        top: 5px;
+    }
+      #menu.on {
+        right: 270px;
+    }
+.bgo{
+    	background: url();
+        background-size: cover;
+    }
+.logo{
+width: 35%;
+}
+.ko{
+	height: 158px;
+	overflow-y: scroll;
+}
+}
+.ssln:hover{
+            background: #FFF;
+        }
+/文件/
+body, html {  
+    height: 100%;  
+    margin: 0;  
+    display: flex;  
+    align-items: center; /* 垂直居中 */  
+    justify-content: center; /* 水平居中 */  
+}  
+  
+.center-container {  
+    position: fixed;  
+    top: 0;  
+    left: 0;  
+    width: 100%;  
+    height: 300%;  
+    display: flex;  
+    align-items: center; /* 垂直居中 */  
+    justify-content: center; /* 水平居中 */  
+    pointer-events: none; /* 使容器本身不响应点击事件 */  
+}  
+  
+.floating-alert {  
+    background-color: #7E7E7E;  
+    color: white;  
+    padding: 10px 20px;  
+    border-radius: 5px;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  
+    z-index: 9999;  
+    display: flex;  
+    align-items: center;  
+    justify-content: space-between;  
+    pointer-events: auto; /* 公告提示需要响应点击事件 */  
+    /* 添加透明度渐变效果 */  
+    transition: opacity 1s ease-in-out;  
+}  
+  
+.close-btn {  
+    background-color: transparent;  
+    border: none;  
+    color: black;  
+    font-size: 1.2em;  
+    cursor: pointer;  
+}  
+  
+/* 公告提示隐藏时的样式 */  
+.floating-alert.hidden {  
+    opacity: 0;  
+    pointer-events: none; /* 不响应鼠标事件 */  
+}
+
+
